@@ -1,6 +1,8 @@
-target 'iOS Example' do
+target 'test' do
 
-pod 'Alamofire', :git => 'git@github.com:mrackwitz/Alamofire.git', :branch => 'podspec'
+pod 'res', :path => 'res'
+
+use_frameworks!
 
 end
 
