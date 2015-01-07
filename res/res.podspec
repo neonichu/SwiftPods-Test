@@ -7,11 +7,9 @@ Pod::Spec.new do |s|
   s.author           = { "Boris Bügling" => "boris@icculus.org" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/res.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
 
-  s.source_files = '*.m'
-  s.resources = 'troll.png'
-  s.resource_bundles = {
-    'res' => ['512_black.png']
-  }
+  s.source_files = '*.swift'
+
+  s.dependency 'KeychainItemWrapper', '~> 1.2'
 end
